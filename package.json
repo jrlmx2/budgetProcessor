@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "pdf.js-extract": "^0.2.1"
+  },
+  "name": "budget",
+  "version": "1.0.0",
+  "description": "app for streamlining Profit and Loss level data for individuals",
+  "main": "main.js",
+  "repository": "https://github.com/jrlmx2/budgetProcessor",
+  "author": "James Lemieux <jrlmx2@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
