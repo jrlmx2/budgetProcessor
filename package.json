@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "pdf.js-extract": "^0.2.1"
+    "@types/node": "^20.11.24",
+    "papaparse": "^5.4.1",
+    "pdfjs-dist": "^4.0.379",
+    "tesseract.js": "^5.0.5"
   },
   "name": "budget",
   "version": "1.0.0",
@@ -11,6 +14,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/papaparse": "^5.3.14",
     "typescript": "^5.3.3"
   }
 }

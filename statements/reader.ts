@@ -1,3 +1,3 @@
 interface Reader {
-    read(): Entry[];
+    read(): Promise<Array<Entry>>;
 }

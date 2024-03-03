@@ -4,4 +4,6 @@ enum Spending {
     DINE_OUT,
     SERVICES,
     REQUIRED,
+    MISC,
+    PAY,
 }
