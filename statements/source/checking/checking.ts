@@ -1,26 +1,26 @@
 import * as fs from "fs";
 
-import { parseCSV } from '../../util/csv_parse';
-import {guessCategory} from "../../util/spending";
+import { parseCSV } from '../../../util/csv_parse';
+import {guessCategory} from "../../../util/spending";
 
-class Bank implements Reader {
+class Checking implements Reader {
     file: string;
     source: string;
     data: Array<unknown> = [];
-    parsedOutput: Array<Entry> = [];
+    parsedOutput: Array<CheckingEntry> = [];
     constructor(file: string, source: string) {
         this.file = file;
         this.source = source;
     }
 
-    async read(): Promise<Array<Entry>> {
+    async read(): Promise<Array<CheckingEntry>> {
 
-        return new Promise<Array<Entry>>( async (resolve, reject) => {
+        return new Promise<Array<CheckingEntry>>( async (resolve, reject) => {
             await parseCSV(fs.createReadStream(this.file), true).then((data) => this.data = data);
 
             let headerMap = mapHeaders(this.data[0]);
 
-            this.parsedOutput = this.data.map((record: any): Entry => {
+            this.parsedOutput = this.data.map((record: any): CheckingEntry => {
                 return {
                     details: record[headerMap.details],
                     type: record[headerMap.type],
@@ -38,7 +38,7 @@ class Bank implements Reader {
     }
 }
 
-function mapHeaders(object: any): EntryMapping {
+function mapHeaders(object: any): CheckingEntryMapping {
     // if (object instanceof Array) return null; // TODO, implement other potential non-header format of cSV?
 
     return {

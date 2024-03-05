@@ -1,0 +1,1 @@
+interface CreditEntry extends Entry {}

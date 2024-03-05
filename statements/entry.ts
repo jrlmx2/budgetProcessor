@@ -4,9 +4,6 @@ interface Entry {
     category: Spending;
     dateOfSpend: Date;
     source: string;
-    details: string;
-    type: string;
-    checkNumber?: number;
 }
 
 interface EntryMapping {
@@ -15,6 +12,4 @@ interface EntryMapping {
     category: string;
     dateOfSpend: string;
     details: string;
-    type: string;
-    checkNumber?: string;
 }
