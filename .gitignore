@@ -23,6 +23,7 @@ lib-cov
 coverage
 *.lcov
 
+data/
 
 text.xlsx
 ~$text.xlsx
