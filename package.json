@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@types/node": "^20.11.24",
+    "dayjs": "^1.11.11",
+    "exceljs": "^4.4.0",
+    "ng": "^0.0.0",
     "papaparse": "^5.4.1",
     "pdfjs-dist": "^4.0.379",
     "tesseract.js": "^5.0.5"

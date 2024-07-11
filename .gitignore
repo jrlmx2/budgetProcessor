@@ -23,6 +23,11 @@ lib-cov
 coverage
 *.lcov
 
+data/
+
+text.xlsx
+~$text.xlsx
+
 # nyc test coverage
 .nyc_output
 

@@ -1,1 +1,0 @@
-interface CheckingEntryMapping extends EntryMapping {}

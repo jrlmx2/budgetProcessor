@@ -1,1 +1,0 @@
-interface CreditEntryMapping extends EntryMapping {}
